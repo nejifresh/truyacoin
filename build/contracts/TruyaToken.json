@@ -1,0 +1,386 @@
+{
+  "contractName": "TruyaToken",
+  "abi": [
+    {
+      "inputs": [],
+      "payable": false,
+      "stateMutability": "nonpayable",
+      "type": "constructor"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "totalSupply",
+      "outputs": [
+        {
+          "internalType": "uint256",
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "stateMutability": "view",
+      "type": "function"
+    }
+  ],
+  "metadata": "{\"compiler\":{\"version\":\"0.5.16+commit.9c3226ce\"},\"language\":\"Solidity\",\"output\":{\"abi\":[{\"inputs\":[],\"payable\":false,\"stateMutability\":\"nonpayable\",\"type\":\"constructor\"},{\"constant\":true,\"inputs\":[],\"name\":\"totalSupply\",\"outputs\":[{\"internalType\":\"uint256\",\"name\":\"\",\"type\":\"uint256\"}],\"payable\":false,\"stateMutability\":\"view\",\"type\":\"function\"}],\"devdoc\":{\"methods\":{}},\"userdoc\":{\"methods\":{}}},\"settings\":{\"compilationTarget\":{\"/Users/nejitawo/Documents/blockchain/etherium/truyatoken/contracts/TruyaToken.sol\":\"TruyaToken\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/Users/nejitawo/Documents/blockchain/etherium/truyatoken/contracts/TruyaToken.sol\":{\"keccak256\":\"0x6ff9c951e7786dddd93f261793f4e4ca91ff0276aa8109e83e97f6e570079fd5\",\"urls\":[\"bzz-raw://9b4b9817b25cf7a1c17a4a865bef56411c2c81e7c5d7c0af8e6e36970aa8932a\",\"dweb:/ipfs/QmNdvpTWsSQJhxkQLzufj2ob2AWVcstgsk6SN6a3q9J7XP\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b506305f5e1006000819055506084806100296000396000f3fe6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a7231582094d9fa9d68fdf49e1392832073e7533fa797c9cfb4c17f7643b81ac1a46365c764736f6c63430005100032",
+  "deployedBytecode": "0x6080604052348015600f57600080fd5b506004361060285760003560e01c806318160ddd14602d575b600080fd5b60336049565b6040518082815260200191505060405180910390f35b6000548156fea265627a7a7231582094d9fa9d68fdf49e1392832073e7533fa797c9cfb4c17f7643b81ac1a46365c764736f6c63430005100032",
+  "sourceMap": "25:216:1:-;;;173:61;8:9:-1;5:2;;;30:1;27;20:12;5:2;173:61:1;218:9;204:11;:23;;;;25:216;;;;;;",
+  "deployedSourceMap": "25:216:1:-;;;;8:9:-1;5:2;;;30:1;27;20:12;5:2;25:216:1;;;;;;;;;;;;;;;;;;;140:26;;;:::i;:::-;;;;;;;;;;;;;;;;;;;;;;;:::o",
+  "source": "pragma solidity ^0.5.1;\n\ncontract TruyaToken {\n    //constructor\n    //set total number of tokens    \n    //read total number of tokens\n    uint256 public totalSupply;\n\n    constructor() public{\n         totalSupply = 100000000;\n    }\n\n   \n}",
+  "sourcePath": "/Users/nejitawo/Documents/blockchain/etherium/truyatoken/contracts/TruyaToken.sol",
+  "ast": {
+    "absolutePath": "/Users/nejitawo/Documents/blockchain/etherium/truyatoken/contracts/TruyaToken.sol",
+    "exportedSymbols": {
+      "TruyaToken": [
+        45
+      ]
+    },
+    "id": 46,
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.5",
+          ".1"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "documentation": null,
+        "fullyImplemented": true,
+        "id": 45,
+        "linearizedBaseContracts": [
+          45
+        ],
+        "name": "TruyaToken",
+        "nodeType": "ContractDefinition",
+        "nodes": [
+          {
+            "constant": false,
+            "id": 36,
+            "name": "totalSupply",
+            "nodeType": "VariableDeclaration",
+            "scope": 45,
+            "src": "140:26:1",
+            "stateVariable": true,
+            "storageLocation": "default",
+            "typeDescriptions": {
+              "typeIdentifier": "t_uint256",
+              "typeString": "uint256"
+            },
+            "typeName": {
+              "id": 35,
+              "name": "uint256",
+              "nodeType": "ElementaryTypeName",
+              "src": "140:7:1",
+              "typeDescriptions": {
+                "typeIdentifier": "t_uint256",
+                "typeString": "uint256"
+              }
+            },
+            "value": null,
+            "visibility": "public"
+          },
+          {
+            "body": {
+              "id": 43,
+              "nodeType": "Block",
+              "src": "193:41:1",
+              "statements": [
+                {
+                  "expression": {
+                    "argumentTypes": null,
+                    "id": 41,
+                    "isConstant": false,
+                    "isLValue": false,
+                    "isPure": false,
+                    "lValueRequested": false,
+                    "leftHandSide": {
+                      "argumentTypes": null,
+                      "id": 39,
+                      "name": "totalSupply",
+                      "nodeType": "Identifier",
+                      "overloadedDeclarations": [],
+                      "referencedDeclaration": 36,
+                      "src": "204:11:1",
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_uint256",
+                        "typeString": "uint256"
+                      }
+                    },
+                    "nodeType": "Assignment",
+                    "operator": "=",
+                    "rightHandSide": {
+                      "argumentTypes": null,
+                      "hexValue": "313030303030303030",
+                      "id": 40,
+                      "isConstant": false,
+                      "isLValue": false,
+                      "isPure": true,
+                      "kind": "number",
+                      "lValueRequested": false,
+                      "nodeType": "Literal",
+                      "src": "218:9:1",
+                      "subdenomination": null,
+                      "typeDescriptions": {
+                        "typeIdentifier": "t_rational_100000000_by_1",
+                        "typeString": "int_const 100000000"
+                      },
+                      "value": "100000000"
+                    },
+                    "src": "204:23:1",
+                    "typeDescriptions": {
+                      "typeIdentifier": "t_uint256",
+                      "typeString": "uint256"
+                    }
+                  },
+                  "id": 42,
+                  "nodeType": "ExpressionStatement",
+                  "src": "204:23:1"
+                }
+              ]
+            },
+            "documentation": null,
+            "id": 44,
+            "implemented": true,
+            "kind": "constructor",
+            "modifiers": [],
+            "name": "",
+            "nodeType": "FunctionDefinition",
+            "parameters": {
+              "id": 37,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "184:2:1"
+            },
+            "returnParameters": {
+              "id": 38,
+              "nodeType": "ParameterList",
+              "parameters": [],
+              "src": "193:0:1"
+            },
+            "scope": 45,
+            "src": "173:61:1",
+            "stateMutability": "nonpayable",
+            "superFunction": null,
+            "visibility": "public"
+          }
+        ],
+        "scope": 46,
+        "src": "25:216:1"
+      }
+    ],
+    "src": "0:241:1"
+  },
+  "legacyAST": {
+    "attributes": {
+      "absolutePath": "/Users/nejitawo/Documents/blockchain/etherium/truyatoken/contracts/TruyaToken.sol",
+      "exportedSymbols": {
+        "TruyaToken": [
+          45
+        ]
+      }
+    },
+    "children": [
+      {
+        "attributes": {
+          "literals": [
+            "solidity",
+            "^",
+            "0.5",
+            ".1"
+          ]
+        },
+        "id": 34,
+        "name": "PragmaDirective",
+        "src": "0:23:1"
+      },
+      {
+        "attributes": {
+          "baseContracts": [
+            null
+          ],
+          "contractDependencies": [
+            null
+          ],
+          "contractKind": "contract",
+          "documentation": null,
+          "fullyImplemented": true,
+          "linearizedBaseContracts": [
+            45
+          ],
+          "name": "TruyaToken",
+          "scope": 46
+        },
+        "children": [
+          {
+            "attributes": {
+              "constant": false,
+              "name": "totalSupply",
+              "scope": 45,
+              "stateVariable": true,
+              "storageLocation": "default",
+              "type": "uint256",
+              "value": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "name": "uint256",
+                  "type": "uint256"
+                },
+                "id": 35,
+                "name": "ElementaryTypeName",
+                "src": "140:7:1"
+              }
+            ],
+            "id": 36,
+            "name": "VariableDeclaration",
+            "src": "140:26:1"
+          },
+          {
+            "attributes": {
+              "documentation": null,
+              "implemented": true,
+              "isConstructor": true,
+              "kind": "constructor",
+              "modifiers": [
+                null
+              ],
+              "name": "",
+              "scope": 45,
+              "stateMutability": "nonpayable",
+              "superFunction": null,
+              "visibility": "public"
+            },
+            "children": [
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 37,
+                "name": "ParameterList",
+                "src": "184:2:1"
+              },
+              {
+                "attributes": {
+                  "parameters": [
+                    null
+                  ]
+                },
+                "children": [],
+                "id": 38,
+                "name": "ParameterList",
+                "src": "193:0:1"
+              },
+              {
+                "children": [
+                  {
+                    "children": [
+                      {
+                        "attributes": {
+                          "argumentTypes": null,
+                          "isConstant": false,
+                          "isLValue": false,
+                          "isPure": false,
+                          "lValueRequested": false,
+                          "operator": "=",
+                          "type": "uint256"
+                        },
+                        "children": [
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "overloadedDeclarations": [
+                                null
+                              ],
+                              "referencedDeclaration": 36,
+                              "type": "uint256",
+                              "value": "totalSupply"
+                            },
+                            "id": 39,
+                            "name": "Identifier",
+                            "src": "204:11:1"
+                          },
+                          {
+                            "attributes": {
+                              "argumentTypes": null,
+                              "hexvalue": "313030303030303030",
+                              "isConstant": false,
+                              "isLValue": false,
+                              "isPure": true,
+                              "lValueRequested": false,
+                              "subdenomination": null,
+                              "token": "number",
+                              "type": "int_const 100000000",
+                              "value": "100000000"
+                            },
+                            "id": 40,
+                            "name": "Literal",
+                            "src": "218:9:1"
+                          }
+                        ],
+                        "id": 41,
+                        "name": "Assignment",
+                        "src": "204:23:1"
+                      }
+                    ],
+                    "id": 42,
+                    "name": "ExpressionStatement",
+                    "src": "204:23:1"
+                  }
+                ],
+                "id": 43,
+                "name": "Block",
+                "src": "193:41:1"
+              }
+            ],
+            "id": 44,
+            "name": "FunctionDefinition",
+            "src": "173:61:1"
+          }
+        ],
+        "id": 45,
+        "name": "ContractDefinition",
+        "src": "25:216:1"
+      }
+    ],
+    "id": 46,
+    "name": "SourceUnit",
+    "src": "0:241:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.5.16+commit.9c3226ce.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0xD90B081BAf5b9aC71f726148b85692AB3e4fe3aE",
+      "transactionHash": "0xfa583b59af314e93d438f326044c90cb484f67c1819ce4dfe09f9f0ad90a3f14"
+    }
+  },
+  "schemaVersion": "3.3.4",
+  "updatedAt": "2021-03-15T01:07:53.904Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "methods": {}
+  },
+  "userdoc": {
+    "methods": {}
+  }
+}
